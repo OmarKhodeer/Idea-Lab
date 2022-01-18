@@ -227,6 +227,4 @@
             </div>
         </div> {{-- end idea-container --}}
     </div> {{-- end ideas-container --}}
-
-
 </x-app-layout>
