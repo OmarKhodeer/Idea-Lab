@@ -37,16 +37,18 @@
                         <div class="text-gray-900">3 Comments</div>
                     </div>
 
-                    <div class="flex items-center space-x-2">
+                    <div x-data="{ isOpen: false }" class="flex items-center space-x-2">
                         <div class="bg-gray-200 text-xxs font-bold uppercase leading-none rounded-full text-center w-28 h-7 px-4 py-2">Open</div>
-                        <button class="relative bg-gray-100 hover:bg-gray-200 rounded-full h-7 px-4 py-2 transition duration-150 ease-in">
+                        <button @click="isOpen = ! isOpen"
+                            class="relative bg-gray-100 hover:bg-gray-200 rounded-full h-7 px-4 py-2 transition duration-150 ease-in">
                             <svg fill="currentColor" width="24" height="6">
                                 <path
                                     d="M2.97.061A2.969 2.969 0 000 3.031 2.968 2.968 0 002.97 6a2.97 2.97 0 100-5.94zm9.184 0a2.97 2.97 0 100 5.939 2.97 2.97 0 100-5.939zm8.877 0a2.97 2.97 0 10-.003 5.94A2.97 2.97 0 0021.03.06z"
                                     style="color: rgba(163, 163, 163, .5)">
                             </svg>
 
-                            {{-- <ul
+                            <ul x-cloak x-show="isOpen" @click.away="isOpen = false" @keydown.escape.window="isOpen=false"
+                                x-transition.origin.top.left.duration
                                 class="absolute w-44 font-semibold bg-white shadow-dialog rounded-xl py-3 text-left ml-8 transition duration-150 ease-in">
                                 <li>
                                     <a href="" class="hover:bg-gray-100 block px-5 py-3 transition duration-150 ease-in">
@@ -59,7 +61,7 @@
                                         Delete Post
                                     </a>
                                 </li>
-                            </ul> --}}
+                            </ul>
                         </button>
                     </div>
                 </div>
@@ -69,14 +71,15 @@
 
     <div class="buttons-container flex items-center justify-between mt-6">
         <div class="flex items-center space-x-4 ml-6">
-            <div class="relative">
-                <button type="button"
+            <div x-data="{ isOpen: false }" class="relative">
+                <button @click="isOpen = ! isOpen" type="button"
                     class="flex items-center justify-center h-11 w-32 bg-blue text-white font-semibold rounded-xl border border-blue hover:bg-blue-hover transition duration-150 px-6 py-3">
 
                     Reply
                 </button>
 
-                <div class="absolute z-10 w-104 text-left font-semibold bg-white shadow-dialog rounded-xl mt-2">
+                <div x-clock x-show="isOpen" @click.away="isOpen=false" @keydown.escape.window="isOpen=false" x-transition.origin.top.left.duration
+                    class="absolute z-10 w-104 text-left font-semibold bg-white shadow-dialog rounded-xl mt-2">
                     <form action="" class="space-y-4 px-4 py-6">
                         <div>
                             <textarea name="post_comment" id="post_comment" cols="30" rows="4"
@@ -106,8 +109,8 @@
                 </div>
             </div>
 
-            <div class="relative">
-                <button type="button"
+            <div x-data="{ isOpen: false }" class="relative">
+                <button @click="isOpen = ! isOpen" type="button"
                     class="flex items-center justify-center h-11 w-36 bg-gray-200 font-semibold rounded-xl border border-gray-200 hover:border-gray-400 transition duration-150 px-6 py-3">
 
                     <span>Set Status</span>
@@ -117,7 +120,8 @@
                     </svg>
                 </button>
 
-                <div class="absolute z-20 w-76 text-left font-semibold bg-white shadow-dialog rounded-xl mt-2">
+                <div x-cloak x-show="isOpen" @click.away="isOpen = false" @keydown.escape.window="isOpen=false" x-transition.origin.top.left.duration
+                    class="absolute z-20 w-76 text-left font-semibold bg-white shadow-dialog rounded-xl mt-2">
                     <form action="" class="space-y-4 px-4 py-6">
                         <div class="space-y-2">
                             <div>
