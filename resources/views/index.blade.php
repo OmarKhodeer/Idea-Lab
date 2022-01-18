@@ -45,24 +45,20 @@
                 </div>
             </div>
 
-            <div class="flex px-2 py-6">
-                <a href="#" class="flex-none">
-                    <img src="https://source.unsplash.com/200x200/?face&crop=face&v=1" alt="avatar" class="w-14 h-14 rounded-xl">
-                </a>
+            <div class="flex flex-1 px-2 py-6">
+                <div class="flex-none">
+                    <a href="#">
+                        <img src="https://source.unsplash.com/200x200/?face&crop=face&v=1" alt="avatar" class="w-14 h-14 rounded-xl">
+                    </a>
+                </div>
 
-                <div class="mx-4">
+                <div class="w-full mx-4">
                     <h4 class="text-xl font-semibold">
                         <a href="#" class="hover:underline">A random Title can go here.</a>
                     </h4>
 
                     <div class="text-gray-600 mt-3 line-clamp-3">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolorum praesentium libero omnis in, quibusdam eum
-                        reprehenderit? Maxime asperiores quia animi autem eos pariatur eligendi optio ut sit magni culpa fugit repellat id, soluta
-                        voluptates repellendus natus ullam accusantium necessitatibus inventore aliquam molestiae? Ipsum facilis magni voluptas quas
-                        mollitia ipsa illum tenetur. Incidunt alias eos dolor fugit magni ullam perferendis ducimus molestiae provident, et nulla cum
-                        eveniet? Dolores excepturi earum nam quae iste ex, dolor consequatur, laborum qui asperiores harum eaque temporibus. Similique
-                        provident eos dignissimos consequuntur omnis perferendis sint aliquid inventore totam eaque hic, odit, molestiae quae dolore
-                        assumenda!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </div>
 
                     <div class="flex items center justify-between mt-6">
@@ -119,12 +115,14 @@
                 </div>
             </div>
 
-            <div class="flex px-2 py-6">
-                <a href="#" class="flex-none">
-                    <img src="https://source.unsplash.com/200x200/?face&crop=face&v=1" alt="avatar" class="w-14 h-14 rounded-xl">
-                </a>
+            <div class="flex flex-1 px-2 py-6">
+                <div class="flex-none">
+                    <a href="#">
+                        <img src="https://source.unsplash.com/200x200/?face&crop=face&v=1" alt="avatar" class="w-14 h-14 rounded-xl">
+                    </a>
+                </div>
 
-                <div class="mx-4">
+                <div class="w-full mx-4">
                     <h4 class="text-xl font-semibold">
                         <a href="#" class="hover:underline">A random Title can go here.</a>
                     </h4>
@@ -180,12 +178,14 @@
                 </div>
             </div>
 
-            <div class="flex px-2 py-6">
-                <a href="#" class="flex-none">
-                    <img src="https://source.unsplash.com/200x200/?face&crop=face&v=1" alt="avatar" class="w-14 h-14 rounded-xl">
-                </a>
+            <div class="flex flex-1 px-2 py-6">
+                <div class="flex-none">
+                    <a href="#">
+                        <img src="https://source.unsplash.com/200x200/?face&crop=face&v=1" alt="avatar" class="w-14 h-14 rounded-xl">
+                    </a>
+                </div>
 
-                <div class="mx-4">
+                <div class="w-full mx-4">
                     <h4 class="text-xl font-semibold">
                         <a href="#" class="hover:underline">A random Title can go here.</a>
                     </h4>
