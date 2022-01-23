@@ -43,4 +43,10 @@ class Idea extends Model
     {
         return $this->belongsTo(Status::class);
     }
+
+    // Return the list of users that voted for this idea.
+    public function votes()
+    {
+        return $this->belongsToMany(User::class, 'votes');
+    }
 }
