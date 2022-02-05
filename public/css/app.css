@@ -660,6 +660,10 @@ select {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -667,10 +671,6 @@ select {
 .-mx-5 {
   margin-left: -1.25rem;
   margin-right: -1.25rem;
-}
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 .mx-auto {
   margin-left: auto;
@@ -701,11 +701,8 @@ select {
 .ml-2 {
   margin-left: 0.5rem;
 }
-.mt-8 {
-  margin-top: 2rem;
-}
-.mt-2 {
-  margin-top: 0.5rem;
+.ml-4 {
+  margin-left: 1rem;
 }
 .mt-3 {
   margin-top: 0.75rem;
@@ -713,14 +710,17 @@ select {
 .mt-6 {
   margin-top: 1.5rem;
 }
-.ml-4 {
-  margin-left: 1rem;
-}
 .ml-6 {
   margin-left: 1.5rem;
 }
+.mt-2 {
+  margin-top: 0.5rem;
+}
 .mr-2 {
   margin-right: 0.5rem;
+}
+.mt-8 {
+  margin-top: 2rem;
 }
 .ml-12 {
   margin-left: 3rem;
@@ -767,6 +767,9 @@ select {
 .h-full {
   height: 100%;
 }
+.h-4 {
+  height: 1rem;
+}
 .h-14 {
   height: 3.5rem;
 }
@@ -775,9 +778,6 @@ select {
 }
 .h-10 {
   height: 2.5rem;
-}
-.h-4 {
-  height: 1rem;
 }
 .h-8 {
   height: 2rem;
@@ -998,11 +998,11 @@ select {
 .border-2 {
   border-width: 2px;
 }
-.border-r {
-  border-right-width: 1px;
-}
 .border-t {
   border-top-width: 1px;
+}
+.border-r {
+  border-right-width: 1px;
 }
 .border-b-4 {
   border-bottom-width: 4px;
@@ -1031,13 +1031,13 @@ select {
   --tw-border-opacity: 1;
   border-color: rgb(50 138 241 / var(--tw-border-opacity));
 }
-.border-gray-100 {
-  --tw-border-opacity: 1;
-  border-color: rgb(245 245 245 / var(--tw-border-opacity));
-}
 .border-gray-400 {
   --tw-border-opacity: 1;
   border-color: rgb(163 163 163 / var(--tw-border-opacity));
+}
+.border-gray-100 {
+  --tw-border-opacity: 1;
+  border-color: rgb(245 245 245 / var(--tw-border-opacity));
 }
 .border-transparent {
   border-color: transparent;
@@ -1119,10 +1119,6 @@ select {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1130,6 +1126,10 @@ select {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .px-8 {
   padding-left: 2rem;
@@ -1197,21 +1197,21 @@ select {
   font-size: 0.75rem;
   line-height: 1rem;
 }
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 .text-xxs {
   font-size: 0.625rem;
   line-height: 1rem;
 }
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 .text-base {
   font-size: 1rem;
@@ -1265,9 +1265,17 @@ select {
   --tw-text-opacity: 1;
   color: rgb(82 82 82 / var(--tw-text-opacity));
 }
+.text-red {
+  --tw-text-opacity: 1;
+  color: rgb(236 69 79 / var(--tw-text-opacity));
+}
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-green {
+  --tw-text-opacity: 1;
+  color: rgb(26 171 139 / var(--tw-text-opacity));
 }
 .text-gray-400 {
   --tw-text-opacity: 1;
@@ -1285,13 +1293,9 @@ select {
   --tw-text-opacity: 1;
   color: rgb(255 199 60 / var(--tw-text-opacity));
 }
-.text-green {
+.text-blue {
   --tw-text-opacity: 1;
-  color: rgb(26 171 139 / var(--tw-text-opacity));
-}
-.text-red {
-  --tw-text-opacity: 1;
-  color: rgb(236 69 79 / var(--tw-text-opacity));
+  color: rgb(50 138 241 / var(--tw-text-opacity));
 }
 .text-gray-200 {
   --tw-text-opacity: 1;
@@ -1312,10 +1316,6 @@ select {
 .text-indigo-700 {
   --tw-text-opacity: 1;
   color: rgb(67 56 202 / var(--tw-text-opacity));
-}
-.text-blue {
-  --tw-text-opacity: 1;
-  color: rgb(50 138 241 / var(--tw-text-opacity));
 }
 .underline {
   -webkit-text-decoration-line: underline;
@@ -1745,14 +1745,14 @@ select {
     top: 2rem;
   }
 
-  .md\:mx-0 {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
   .md\:mx-4 {
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+
+  .md\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .md\:mt-0 {
