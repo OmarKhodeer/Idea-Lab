@@ -21,7 +21,7 @@
 
 <body class="font-sans bg-gray-background text-gray-900 text-sm">
     <header class="flex flex-col md:flex-row items-center justify-between px-8 py-4">
-        <a href="#">App Logo</a>
+        <a href="{{ url('/') }}">App Logo</a>
         <div class="flex items-center mt-2 md:mt-0">
             @if (Route::has('login'))
                 <div class="px-6 py-4">
@@ -85,30 +85,7 @@
         </div>
 
         <div class="w-full px-2 md:px-0 md:w-175">
-            <nav class="hidden md:flex items-center justify-between text-xs">
-                <ul class="flex uppercase font-semibold border-b-4 pb-3 space-x-10">
-                    <li>
-                        <a href="#" class="border-b-4 pb-3 border-blue">All Ideas (87)</a>
-                    </li>
-                    <li>
-                        <a href="#" class="text-gray-400 transition duration-150 ease-in border-b-4 pb-3 hover:border-blue">Considering (6)</a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="text-gray-400 transition duration-150 ease-in border-b-4 pb-3 hover:border-blue">In Progress (11)</a>
-                    </li>
-                </ul>
-
-                <ul class="flex uppercase font-semibold border-b-4 pb-3 space-x-10">
-                    <li>
-                        <a href="#" class="text-gray-400 transition duration-150 ease-in border-b-4 pb-3 hover:border-blue">Implemented (10)</a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="text-gray-400 transition duration-150 ease-in border-b-4 pb-3 hover:border-blue">Closed (55)</a>
-                    </li>
-                </ul>
-            </nav>
+            <livewire:status-filters />
 
             <div class="mt-8">
                 {{ $slot }}
