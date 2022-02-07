@@ -76,7 +76,7 @@
 
                         <a href="{{ route('register') }}"
                             class="inline-block w-1/2 h-11 text-xs bg-gray-200 font-semibold rounded-xl border border-gray-200 hover:border-gray-400 transition duration-150 px-6 py-3 mt-4">
-                            Attach
+                            Register
                         </a>
                     </div>
                 @endauth
