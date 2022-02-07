@@ -41,7 +41,7 @@ class OtherFiltersTest extends TestCase
             'user_id' => $user->id,
             'category_id' => $categoryOne->id,
             'status_id' => $statusOpen->id,
-            'title' => 'My First Idea',
+            'title' => 'My Second Idea',
             'description' => 'Description for my first idea',
         ]);
 
